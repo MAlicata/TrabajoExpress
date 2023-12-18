@@ -9,9 +9,9 @@
 <body>
 
     <div class="container-md">
-        <h3 class="text-center">Agregar Servicio</h3>
+        <h3 class="text-center mt-2 mb-4">Agregar Servicio</h3>
         <div class="row justify-content-center">
-            <div class="col-10 mt-2">
+            <div class="col mt-2">
                 <select class="form-select form-select-sm" aria-label="Small select example">
                     <option selected>Selecciona el tipo de servicio</option>
                     <option value="1">Jardineria</option>
@@ -20,8 +20,39 @@
                   </select>    
             </div>
         </div>
-        <div class="row justify-content-center mt-2">
-            <div class="d-grid gap-2 col-10 mx-auto">
+        <div class="row justify-content-center">
+            <div class="col-6 mt-3">
+                <h5 class="text-center">Precio del servicio</h5>
+            </div>
+            <div class="col-6 mt-2 mb-3">
+                <input type="number" class="form-control" aria-label="" aria-describedby="basic-addon1"> 
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <span class="input-group-text mb-1">Descripción del servicio</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="">Ubicación</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      San Miguel de Tucumán
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Tafi Viejo - Tucumán
+                    </label>
+                  </div>
+            </div>
+        </div>
+        <div class="row justify-content-end mt-2">
+            <div class="d-grid gap-2 col-4">
                 <button type="button" class="btn btn-primary btn-sm">Agregar</button> 
             </div>
         </div>
